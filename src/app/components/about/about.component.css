@@ -1,0 +1,58 @@
+.about-title{
+    font-family: 'Segoe UI', 'Roboto', arial, sans-serif;;
+    font-size: 130px;
+}
+
+.about-subtitle{
+    color: white;
+    font-family: 'Segoe UI', 'Roboto', arial, sans-serif;
+    font-size: 80px;
+}
+
+.btn-rounded{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    color:#2eb9a2;
+    border-color: #2eb9a2;
+    border-radius: 20px;
+    border: solid 2px;
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+}
+
+.btn-rounded:hover{
+    color:white;
+    border-color: white;
+}
+
+.about-content{
+    width: 100%;
+    height: auto;
+    margin-left: 5%;
+}
+
+
+h3.typewriter{
+    color:white;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #181818; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #181818; }
+  }
