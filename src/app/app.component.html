@@ -1,85 +1,64 @@
 <div class="container-background">
   <div class="page-background">
-      <div class="center-site">
-          <div class="my-container">
-            <div class="row m-0">
-               <div class="col-md-1">
-                  <div class="sidebar"> 
-                    <ul class="p-0 mt-5">
-                      <li class="nav-item">
-                        <div class="rotate">
-                          <a class="nav-link" [routerLink]="['/']" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="router-link-active">
-                            About
-                          </a>
-                        </div>
-                      </li>
-                      <li class="nav-item">
-                        <div class="rotate margin-top">
-                          <a class="nav-link" [routerLink]="['/project']"  [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="router-link-active">
-                            Portfolio
-                          </a>
-                        </div>
-                      </li>
-                      <li class="nav-item">
-                        <div class="rotate margin-top">
-                        <a class="nav-link" [routerLink]="['/contact']"  [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="router-link-active">
-                          Contact
-                        </a>
-                      </div>
-                      </li>
-                    </ul>
+    <div class="center-site">
+      <div class="my-container">
+        <div class="row m-0">
+          <div class="col-md-1">
+            <div class="sidebar">
+              <ul class="p-0">
+                <li class="nav-item">
+                  <div class="rotate">
+                    <a class="nav-link" [routerLink]="['/']" [routerLinkActiveOptions]="{ exact: true }"
+                      routerLinkActive="router-link-active">
+                      About
+                    </a>
                   </div>
-               </div>
-               <div class="col-md-11 pr-0">
-                <div class="router-content position-absolute">
-                  <router-outlet></router-outlet>
-                </div>
-                <div class="wrapper">
-                  <svg width="100%" height="100%" viewBox="0 0 1434.653 799.557">
-                      <path id="Trazado_1" data-name="Trazado 1" d="M325.5,940c518.08-152.782,455.251-272.9,859.947-283.985s574.706-515.572,574.706-515.572V940Z" transform="translate(-325.5 -140.443)" fill="#2eb9a2"/>
-                  </svg>
-                </div>
-              </div>
+                </li>
+                <li class="nav-item">
+                  <div class="rotate margin-top">
+                    <a class="nav-link" [routerLink]="['/project']" [routerLinkActiveOptions]="{ exact: true }"
+                      routerLinkActive="router-link-active">
+                      Portfolio
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="rotate margin-top">
+                    <a class="nav-link" [routerLink]="['/contact']" [routerLinkActiveOptions]="{ exact: true }"
+                      routerLinkActive="router-link-active">
+                      Contact
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="social-icons">
+                    <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mateo-jes%C3%BAs-chamorro-b32276183/">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/mchamorro7">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="col-md-11 pr-0">
+            <div class="router-content d-flex">
+              <div class="position-absolute">
+                <router-outlet></router-outlet>
+              </div>
+              <div class="wrapper">
+                <svg width="100%" height="100%" viewBox="0 0 1434.653 799.557">
+                  <path id="Trazado_1" data-name="Trazado 1"
+                    d="M325.5,940c518.08-152.782,455.251-272.9,859.947-283.985s574.706-515.572,574.706-515.572V940Z"
+                    transform="translate(-325.5 -140.443)" fill="#2eb9a2" />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
   </div>
-
- <!--  <div class="col-1 pr-0">
-                  <div class="sidebar-sticky">
-                    <ul class="p-0 mt-5">
-                      <li class="nav-item">
-                        <div class="rotate">
-                          <a class="nav-link" [routerLink]="['/']" routerLinkActive="router-link-active">
-                            About
-                          </a>
-                        </div>
-                      </li>
-                      <li class="nav-item">
-                        <div class="rotate margin-top">
-                          <a class="nav-link" [routerLink]="['/project']" routerLinkActive="router-link-active">
-                            Portfolio
-                          </a>
-                        </div>
-                      </li>
-                      <li class="nav-item">
-                        <div class="rotate margin-top">
-                        <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="router-link-active">
-                          Contact
-                        </a>
-                      </div>
-                      </li>
-                    </ul>
-                  </div>
-              </div>
-              <div class="col-11 pr-0">
-                <div class="router-content position-absolute">
-                  <router-outlet></router-outlet>
-                </div>
-                <div class="wrapper">
-                  <svg width="100%" height="100%" viewBox="0 0 1434.653 799.557">
-                    <path id="Trazado_1" data-name="Trazado 1" d="M325.5,940c518.08-152.782,455.251-272.9,859.947-283.985s574.706-515.572,574.706-515.572V940Z" transform="translate(-325.5 -140.443)" fill="#2eb9a2"/>
-                  </svg>
-                </div>
-              </div> -->
+</div>

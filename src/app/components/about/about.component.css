@@ -1,6 +1,7 @@
 .about-title{
     font-family: 'Segoe UI', 'Roboto', arial, sans-serif;;
     font-size: 130px;
+    margin-top: 40px;
 }
 
 .about-subtitle{
@@ -10,7 +11,7 @@
 }
 
 .btn-rounded{
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 60px;
     color:#2eb9a2;
     border-color: #2eb9a2;
@@ -32,6 +33,10 @@
     margin-left: 5%;
 }
 
+.typewriter-container{
+    float: right;
+}
+
 
 h3.typewriter{
     color:white;
@@ -43,16 +48,74 @@ h3.typewriter{
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
-  }
+}
   
-  /* The typing effect */
-  @keyframes typing {
+/* The typing effect */
+@keyframes typing {
     from { width: 0 }
     to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #181818; }
-  }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .col-12{
+        width: 100%;
+    }
+
+    .col-12.min-content{
+        width: min-content;
+        display: inline-flex;
+    }
+
+    .about-title{
+        font-size: 80px;
+        margin-top: 0;
+    }
+    
+    .about-subtitle{
+        font-size: 50px;
+    }
+
+    .about-content{
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .typewriter-container{
+        display: flex;
+        width: auto;
+        float: none;
+    }
+
+    .btn-rounded{
+        width: 150px;
+        height: 50px;
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+
+    h3.typewriter{
+        border-right: .15em solid #2eb9a2;
+        font-size: 20px;
+    }
+
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #2eb9a2; }
+    }
+}
